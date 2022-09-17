@@ -6,31 +6,31 @@
 
   <title>{{ site.title }} - {{ page.title }}</title>
 
-  <link rel="icon" type="image/x-icon" href="{{ '/assets/css/images/favicon.jpg' | relative_url }}">
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/css/images/favicon.jpg' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
 
    {% seo %}
  
    <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="{{ '/assets/css/bootstrap.css' | relative_url }}">
+   <link rel="stylesheet" href="{{ '/assets/css/bootstrap.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
  
   {% if page.components contains 'calendar' %}
     <!-- FullCalendar CSS -->
-    <link rel="stylesheet" href="{{ '/assets/modules/fullcalendar/css/main.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/modules/fullcalendar/css/main.min.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
 
     <!-- Bootstrap-Icons CSS-->
-    <link rel="stylesheet" href="{{ '/assets/modules/bootstrap-icons/css/bootstrap-icons.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/modules/bootstrap-icons/css/bootstrap-icons.css' | relative_url }}"?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}>
    {% endif %}
  
   {% if page.components contains 'maps' %}
 
     <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="{{ '/assets/modules/leaflet/css/leaflet.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/modules/leaflet/css/leaflet.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
  
     <!-- Leaflet.fullscreen CSS -->
-    <link rel="stylesheet" href="{{ '/assets/modules/leaflet.fullscreen/css/leaflet.fullscreen.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/modules/leaflet.fullscreen/css/leaflet.fullscreen.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
    {% endif %}
  
-   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
   <!-- End: CSS -->
  
  </head>
