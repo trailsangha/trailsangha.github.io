@@ -1,0 +1,22 @@
+{% comment %}
+
+  Hot Buttons
+
+  Make a row of buttons (probably to display below header on homepage).
+
+{% endcomment %}
+
+{% if site.data.hotbuttons[0] %}
+<div class="text-center">
+  {% for item in site.data.hotbuttons %}
+    <a 
+        href="{{ item.url | relative_url }}" 
+        class="btn btn-danger fs-5 mx-3 mx-md-5" 
+        type="button"
+    >
+      {{ item.text }}
+    </a>
+  {% endfor %}
+</div>
+{% endif %}
+

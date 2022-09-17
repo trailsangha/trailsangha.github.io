@@ -1,0 +1,45 @@
+
+<nav class="ts-navbar navbar navbar-expand-md mask-custom shadow-0">
+  <div class="container-fluid">
+
+    <!-- Branding -->
+    <a class="navbar-brand" href="{{ site.data.nav.brand.url | relative_url }}">{{ site.data.nav.brand.name }}</a>
+
+    <!-- Hamburger -->
+    <button 
+         class="navbar-toggler" 
+         type="button" 
+         data-bs-toggle="collapse"
+         data-bs-target="#navbarSupportedContent" 
+         aria-controls="navbarSupportedContent" 
+         aria-expanded="false"
+         aria-label="Toggle navigation">
+      <span 
+          class="navbar-toggler-icon">
+      </span>
+    </button>
+
+    <!-- Navigation -->
+    <div 
+        class="collapse navbar-collapse" 
+        id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav me-auto">
+       {% for item in site.data.nav.items %}
+           <li class="nav-item">
+             <a 
+               href="{{ item.url | relative_url }}"
+               class="nav-link{% comment %}{%if active %} active{% endif %}{% endcomment %}"
+               {% if page.url == item.url %}
+                 aria-current="page"
+               {% endif %}
+             >
+               {{ item.name }}
+            </a>
+           </li>
+        {% endfor %}
+      </ul>
+
+  </div>
+</nav>
+

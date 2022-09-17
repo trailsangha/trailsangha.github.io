@@ -1,0 +1,66 @@
+
+#
+# Calendar
+#
+
+# When to break from list to calendar view -- same as md bootstrap breakpoint.
+break_width: 768
+
+time_zone: "America/New_York"
+
+event_feeds:
+
+  # -- HOLIDAYS ------------------------------------------------------------ #  
+
+  - google: en.usa.official#holiday@group.v.calendar.google.com
+    options:
+      display: background
+      className: ts-holiday-event
+      color: "#dd00bbc0"
+
+  - csv: election_days
+    options:
+      className: ts-holiday-event
+      display: background
+      color: "#dd00bbc0"
+
+  # -- SPECIAL EVENTS ------------------------------------------------------ #  
+  
+  - csv: special
+    options:
+      className: ts-special-event
+      display: block
+      #      color: "#39ff00"
+      color: "#ff1900"
+      
+
+  # -- WALKS --------------------------------------------------------------- #  
+
+  - csv: short_walks
+    options:
+      className: ts-walk-event
+      display: block
+      color: "#c8bf6a"
+
+  - csv: long_walks
+    options:
+      className: ts-walk-event
+      display: block
+      color: "#c8bf6a"
+
+  # -- HIKES --------------------------------------------------------------- #  
+
+  - csv: day_hikes
+    options:
+      className: ts-hike-event
+      display: block
+      color: "#ff9c33"
+
+  # -- TRIPS --------------------------------------------------------------- #  
+
+  - csv: trips
+    options:
+      className: ts-trip-event
+      display: block
+      color: "#53dfcf"
+

@@ -1,0 +1,45 @@
+
+<footer class="row align-center text-center">
+
+  <!-- Nameplate -->
+  <div class="col-sm-6 text-muted align-self-center">
+    <span class="align-middle">
+    <a href="{{ '/' | relative_url }}">
+      <img
+          src="{{ '/assets/css/images/ts-logo-small.webp' | relative_url }}"
+          alt="Trail Sangha Logo"
+          class="ts-logo-footer"
+      >
+    </a>
+    <p class="fs-6 text-muted">
+      {{ site.data.footer.address }}<br>
+      {{ site.data.footer.email }}<br>
+      {{ site.data.footer.url }}<br>
+      <small>&copy;&nbsp;Copyright&nbsp;{{ site.time | date: '%Y' }},&nbsp;{{site.data.footer.name}}</small>
+    </p>
+    </span>
+  </div>
+
+  <!-- HR _ONLY_ when horizontal. Tweak spacing. -->
+  <div class="col-sm-6 d-sm-none d-block">
+    <hr class="pb-3">
+  </div>
+
+  <!-- Basic Navigation -->
+  <div class="col-sm-6 align-self-center">
+    <nav>
+      <p class="fs-5 text-uppercase">
+        {% for item in site.data.nav.items %}
+          <a href="{{ item.url | relative_url }}" class="link-dark">
+              {{ item.name }}
+          </a>
+          {%- unless forloop.last -%}
+            <br>
+          {% endunless %}
+        {% endfor %}
+      </p>
+    </nav>
+  </div>
+
+</footer>
+

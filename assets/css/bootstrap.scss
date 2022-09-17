@@ -1,0 +1,165 @@
+---
+---
+
+//
+// Custom Bootstrap Theming (5.2.1)
+//
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/_scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "bootstrap/_scss/variables";
+
+// 4. Include any default map overrides here
+
+$walk: #c8bf6a;       // Also in '_data/calendars.yml'.
+$hike: #ff9c33;       // Also in '_data/calendars.yml'.
+$trip: #53dfcf;       // Also in '_data/calendars.yml'.
+$holiday: #dd00bb;    // Also in '_data/calendars.yml' (sans transparency).
+$special: #ff1900;    // Also in '_data/claendars.yml'
+$past:    $gray-500;
+$footer:  $gray-300;
+$hard:    $gray-800;
+$soft:    $gray-700;
+
+$ts-colors: (
+  "walk":    $walk,
+  "hike":    $hike,
+  "trip":    $trip,
+  "holiday": $holiday,
+  "special": $special,
+  "past":    $past,
+  "footer":  $footer,
+  "hard":    $hard,
+  "soft":    $soft
+);
+
+$colors: map-merge($colors, $ts-colors);
+
+$walk-100: tint-color($walk, 80%);
+$walk-200: tint-color($walk, 60%);
+$walk-300: tint-color($walk, 40%);
+$walk-400: tint-color($walk, 20%);
+$walk-500: $walk;
+$walk-600: shade-color($walk, 20%);
+$walk-700: shade-color($walk, 40%);
+$walk-800: shade-color($walk, 60%);
+$walk-900: shade-color($walk, 80%);
+
+$hike-100: tint-color($hike, 80%);
+$hike-200: tint-color($hike, 60%);
+$hike-300: tint-color($hike, 40%);
+$hike-400: tint-color($hike, 20%);
+$hike-500: $hike;
+$hike-600: shade-color($hike, 20%);
+$hike-700: shade-color($hike, 40%);
+$hike-800: shade-color($hike, 60%);
+$hike-900: shade-color($hike, 80%);
+
+$trip-100: tint-color($trip, 80%);
+$trip-200: tint-color($trip, 60%);
+$trip-300: tint-color($trip, 40%);
+$trip-400: tint-color($trip, 20%);
+$trip-500: $trip;
+$trip-600: shade-color($trip, 20%);
+$trip-700: shade-color($trip, 40%);
+$trip-800: shade-color($trip, 60%);
+$trip-900: shade-color($trip, 80%);
+
+$holiday-100: tint-color($holiday, 80%);
+$holiday-200: tint-color($holiday, 60%);
+$holiday-300: tint-color($holiday, 40%);
+$holiday-400: tint-color($holiday, 20%);
+$holiday-500: $holiday;
+$holiday-600: shade-color($holiday, 20%);
+$holiday-700: shade-color($holiday, 40%);
+$holiday-800: shade-color($holiday, 60%);
+$holiday-900: shade-color($holiday, 80%);
+
+$special-100: tint-color($special, 80%);
+$special-200: tint-color($special, 60%);
+$special-300: tint-color($special, 40%);
+$special-400: tint-color($special, 20%);
+$special-500: $special;
+$special-600: shade-color($special, 20%);
+$special-700: shade-color($special, 40%);
+$special-800: shade-color($special, 60%);
+$special-900: shade-color($special, 80%);
+
+// Theme colors
+
+$ts-theme-colors: (
+  "walk":    $walk,
+  "hike":    $hike,
+  "trip":    $trip,
+  "holiday": $holiday,
+  "special": $special,
+  "past":    $past,
+  "footer":  $footer,
+  "hard":    $hard,
+  "soft":    $soft
+);
+
+$theme-colors: map-merge($theme-colors, $ts-theme-colors);
+
+// 5. Include remainder of required parts
+@import "bootstrap/_scss/maps";
+@import "bootstrap/_scss/mixins";
+@import "bootstrap/_scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "bootstrap/_scss/utilities";
+@import "bootstrap/_scss/reboot";
+@import "bootstrap/_scss/type";
+@import "bootstrap/_scss/images";
+@import "bootstrap/_scss/containers";
+@import "bootstrap/_scss/grid";
+@import "bootstrap/_scss/helpers";
+
+// @import "bootstrap/_scss/tables";
+// @import "bootstrap/_scss/forms";
+@import "bootstrap/_scss/buttons";            // FullCalendar buttons
+@import "bootstrap/_scss/transitions";        // Navbar expansion
+// @import "bootstrap/_scss/dropdown";
+@import "bootstrap/_scss/button-group";       // FullCalendar buttons
+@import "bootstrap/_scss/nav";                // Navbar parent
+@import "bootstrap/_scss/navbar";             // Navbar
+// @import "bootstrap/_scss/card";
+// @import "bootstrap/_scss/accordion";
+// @import "bootstrap/_scss/breadcrumb";
+// @import "bootstrap/_scss/pagination";
+ @import "bootstrap/_scss/badge";
+// @import "bootstrap/_scss/alert";
+// @import "bootstrap/_scss/progress";
+// @import "bootstrap/_scss/list-group";
+// @import "bootstrap/_scss/close";
+// @import "bootstrap/_scss/toasts";
+// @import "bootstrap/_scss/modal";
+// @import "bootstrap/_scss/tooltip";
+// @import "bootstrap/_scss/popover";
+// @import "bootstrap/_scss/carousel";
+// @import "bootstrap/_scss/spinners";
+// @import "bootstrap/_scss/offcanvas";
+// @import "bootstrap/_scss/placeholders";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `utilities.scss`
+
+// Make width responsive (w-100 w-md-75 w-lg-50)
+$utilities: map-merge(
+  $utilities, (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+@import "bootstrap/_scss/utilities/api";
+
+// 8. Add additional custom code here
+
+// Further styles in styles.scss.
+

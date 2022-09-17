@@ -1,0 +1,37 @@
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.title }} - {{ page.title }}</title>
+
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/css/images/favicon.jpg' | relative_url }}">
+
+   {% seo %}
+ 
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="{{ '/assets/css/bootstrap.css' | relative_url }}">
+ 
+  {% if page.components contains 'calendar' %}
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="{{ '/assets/modules/fullcalendar/css/main.min.css' | relative_url }}">
+
+    <!-- Bootstrap-Icons CSS-->
+    <link rel="stylesheet" href="{{ '/assets/modules/bootstrap-icons/css/bootstrap-icons.css' | relative_url }}">
+   {% endif %}
+ 
+  {% if page.components contains 'maps' %}
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="{{ '/assets/modules/leaflet/css/leaflet.css' | relative_url }}">
+ 
+    <!-- Leaflet.fullscreen CSS -->
+    <link rel="stylesheet" href="{{ '/assets/modules/leaflet.fullscreen/css/leaflet.fullscreen.css' | relative_url }}">
+   {% endif %}
+ 
+   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <!-- End: CSS -->
+ 
+ </head>
+

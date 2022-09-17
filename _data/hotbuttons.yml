@@ -1,0 +1,13 @@
+
+#
+# Hot Buttons
+#
+# Probably displayed below header on homepage.
+#
+
+# - text: Join
+#   url: /#join
+
+- text: Calendar
+  url: /#calendar
+

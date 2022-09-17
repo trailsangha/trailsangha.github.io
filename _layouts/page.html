@@ -1,0 +1,51 @@
+---
+layout: page
+---
+<!doctype html>
+<html lang="en">
+
+  {% include head.html %}
+  
+  <body class="pb-5">
+
+    {% comment %}
+    {% include debug-breakpoints.html %}
+    {% include debug-colors.html %}
+    {% endcomment %}
+
+    <div class="container-fluid p-0 px-xxl-5 pt-xxl-3">
+      <div class="container-fluid p-0 bg-white bg-opacity-75 border-start border-4 border-holiday border-opacity-50">
+        <div class="container-lg px-2 px-md-4 px-lg-5 bg-white">
+            {% include navbar.html %}
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-0 px-xxl-5">
+      <div class="container-fluid p-0">
+        <div class="container-lg px-3 px-md-4 px-lg-5 py-5">
+          {% include header.html %}
+          {% if page.hotbuttons %}
+            {% include hotbuttons.html %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+ 
+    <div class="container-fluid p-0 px-xxl-5">
+      <div class="container-fluid p-0 bg-white bg-opacity-75 border-start border-4 border-holiday border-opacity-50">
+        <div class="container-lg px-3 px-md-4 px-lg-5 py-5 bg-white" >
+          {% include main.html %}
+        </div>
+        <div class="container-lg px-0 py-5 bg-white">
+          <div class="container-fluid p-5 bg-footer">
+            {% include footer.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include tail.html %}
+
+  </body>
+</html>

@@ -1,0 +1,50 @@
+title: Trail Sangha
+tagline: "Hiking-oriented Zen group in New York City."
+email: tailshanga@gmail.com
+description: > 
+  Hiking-oriented Zen sangha in New York City.
+author:
+  name: Cameron Crowe
+
+url: https://www.trailsangha.com
+baseurl: /
+
+exclude:
+  - vendor
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids: false
+
+sass:
+  load_paths:
+    - _sass
+    - assets/modules
+  style: expanded
+  #style: compact
+
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+    
+relative_links:
+  enabled:     true
+  collections: false
+
+defaults:
+  -
+    scope:
+      path: "" 
+    values:
+      layout: default
+      components: []
+      hotbuttons: false
+

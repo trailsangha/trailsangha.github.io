@@ -1,0 +1,38 @@
+
+#
+# Navigation
+#
+
+#
+# Used in Navbar and Footer.
+#
+
+brand:
+  name: Trail&nbsp;Sangha
+  url: /
+
+items:
+  - name: Home
+    url: /
+
+  - name: Join 
+    url: /#join
+
+  - name: Find&nbsp;Us
+    url: /#find-us
+
+  - name: Calendar
+    url: /#calendar
+
+  - name: About
+    url: /about.html
+
+  - name: Guidelines
+    url: /guidelines.html
+
+#  - name: Resources
+#    url: /resources.html
+
+  - name: Contact
+    url: /contact.html
+
