@@ -14,11 +14,12 @@
    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
  
   {% if page.components contains 'calendar' %}
+    <!-- Bootstrap-Icons CSS-->
+    <link rel="stylesheet" href="{{ '/assets/modules/bootstrap-icons/css/bootstrap-icons.css' | relative_url }}"?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}>
+
     <!-- FullCalendar CSS -->
     <link rel="stylesheet" href="{{ '/assets/modules/fullcalendar/css/main.min.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
 
-    <!-- Bootstrap-Icons CSS-->
-    <link rel="stylesheet" href="{{ '/assets/modules/bootstrap-icons/css/bootstrap-icons.css' | relative_url }}"?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}>
    {% endif %}
  
   {% if page.components contains 'maps' %}
