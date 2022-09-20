@@ -6,7 +6,8 @@
 name: "Trail&nbsp;Sangha"
 address: "New&nbsp;York&nbsp;City"
 email: "trailsangha@gmail.com"
-url: "www.trailsangha.com"
+url: "trailsangha.com"
+target_url: "https://www.trailsangha.com"
 
 # Navigation pulled from '_data/nav.yml'.
 
