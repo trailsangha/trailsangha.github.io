@@ -13,8 +13,8 @@
     </a>
     <p class="fs-6 text-muted">
       {{ site.data.footer.address }}<br>
-      {{ site.data.footer.email }}<br>
-      {{ site.data.footer.url }}<br>
+      <a href="mailto:{{ site.data.footer.email }}">{{ site.data.footer.email }}</a><br>
+      <a href="https://{{ site.data.footer.url }}">{{ site.data.footer.url }}</a><br>
       <small>&copy;&nbsp;Copyright&nbsp;{{ site.time | date: '%Y' }},&nbsp;{{site.data.footer.name}}</small>
     </p>
     </span>

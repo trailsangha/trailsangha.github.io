@@ -11,7 +11,7 @@ title: Contact
 
 We'll do our best to get back to you soon, but we might be out hiking :)
 
-__trailsangha@gmail.com__
+__[trailsangha@gmail.com](mailto:trailsangha@gmail.com)__
 
 </div>
 </div>
