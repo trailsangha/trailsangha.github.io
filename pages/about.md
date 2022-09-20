@@ -21,7 +21,7 @@ This is a new sangha, born partly out of my own hiking and nature-oriented pract
 
 -- Cam
 
-![Cam with Rakusu]({{ '/assets/images/cam-rakusu-small.jpg' | relative_url }}){:.mx-auto .mw-100 .rounded}
+![Cam with Rakusu]({{ '/assets/img/cam-rakusu-small.jpg' | relative_url }}){:.mx-auto .mw-100 .rounded}
 
 </div>
 </div>

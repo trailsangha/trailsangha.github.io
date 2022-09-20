@@ -1,22 +1,22 @@
 
 <!-- Bootstrap Bundle JS -->
-<script src="{{ '/assets/modules/bootstrap/js/bootstrap.bundle.min.js' | relative_url}}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}"></script>
+<script src="{{ '/assets/libs/bootstrap/js/bootstrap.bundle.min.js' | relative_url}}{%- include cache-buster.html -%}"></script>
 
 {% if page.components contains 'calendar' %}
   <!-- fullCalendar JS -->
-  <script src="{{ '/assets/modules/fullcalendar/js/main.min.js' | relative_url}}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}"></script>
+  <script src="{{ '/assets/libs/fullcalendar/js/main.min.js' | relative_url}}{%- include cache-buster.html -%}"></script>
 {% endif %}
 
 {% if page.components contains 'maps' %}
   <!-- Leaflet JS -->
-  <script src="{{ '/assets/modules/leaflet/js/leaflet.js' | relative_url}}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}"></script>
+  <script src="{{ '/assets/libs/leaflet/js/leaflet.js' | relative_url}}{%- include cache-buster.html -%}"></script>
 
   <!-- Leaflet.fullscreen JS -->
-  <script src="{{ '/assets/modules/leaflet.fullscreen/js/leaflet.fullscreen.min.js' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}"></script>
+  <script src="{{ '/assets/libs/leaflet.fullscreen/js/leaflet.fullscreen.min.js' | relative_url }}{%- include cache-buster.html -%}"></script>
 {% endif %}
 
-<!-- This page JS -->
+<!-- Page Assets JS -->
 {% for item in page.assets.js %}
-  <script src="{{ item | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}"></script>
+  <script src="{{ item | relative_url }}{%- include cache-buster.html -%}"></script>
 {% endfor %}
 

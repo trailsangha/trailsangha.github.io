@@ -1,0 +1,99 @@
+---
+---
+
+//
+// Generic Styling
+//
+// Bootstrap theming in 'assets/css/ts-bootstrap.scss'
+//
+
+////// Basic Styles
+
+// Body background
+body {
+  background-image: 
+    url(./img/ts-body-bg.png),
+    linear-gradient(to bottom, #d7d5c6, #050302);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+}
+
+body {
+  color: var(--bs-hard);
+}
+
+p {
+  color: var(--bs-soft);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top:1em;
+}
+
+// // Maybe needed for a larger footer image.
+// .ts-logo-footer {
+//   height: 5em;
+// }
+
+
+/////// Maps
+
+.ts-map-basic {
+  width: 100%; 
+  height: 400px; 
+}
+
+
+/////// TS Calendar Styles
+
+//
+// Prefer styling via JS interface when reasonable.
+//
+
+// TS event classes.
+.ts-walk-event {}
+.ts-hike-event {}
+.ts-trip-event {}
+.ts-holiday-event {}
+
+
+// Past events
+//
+// Tedius to use interface, but these styles mess up list view.  
+//
+// Either 
+//   [x] hide past events in listView, or 
+//   [ ] use targeted media query, etc.
+//
+.fc-event-past{
+  background-color: var(--bs-past)!important; 
+  border-color:     var(--bs-past)!important;
+}
+
+// Can gray out past event day backgrounds... but this appears to mess up
+// up the grid colors.
+// fc-day-past{background-color:#f4f4f4;}
+
+// Really cram it in there.
+//
+// Also set height = "auto" in JS interface (removes scrollbar!)
+//
+.fc .fc-title, 
+.fc .fc-event, 
+.fc .fc-event-dot 
+  {
+    font-size: .8em;
+  }
+.fc .fc-event-time, 
+.fc .fc-event-title {
+    padding: 0 1px;
+    white-space: normal; // Line wrapping
+  }
+

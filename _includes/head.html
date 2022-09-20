@@ -6,32 +6,32 @@
 
   <title>{{ site.title }} - {{ page.title }}</title>
 
-  <link rel="icon" type="image/x-icon" href="{{ '/assets/css/images/favicon.jpg' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/css/img/favicon.jpg' | relative_url }}{%- include cache-buster.html -%}">
 
    {% seo %}
  
    <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="{{ '/assets/css/bootstrap.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
+   <link rel="stylesheet" href="{{ '/assets/css/ts-bootstrap.css' | relative_url }}{%- include cache-buster.html -%}">
  
   {% if page.components contains 'calendar' %}
     <!-- Bootstrap-Icons CSS-->
-    <link rel="stylesheet" href="{{ '/assets/modules/bootstrap-icons/css/bootstrap-icons.css' | relative_url }}"?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}>
+    <link rel="stylesheet" href="{{ '/assets/libs/bootstrap-icons/css/bootstrap-icons.css' | relative_url }}{%- include cache-buster.html -%}">
 
     <!-- FullCalendar CSS -->
-    <link rel="stylesheet" href="{{ '/assets/modules/fullcalendar/css/main.min.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
+    <link rel="stylesheet" href="{{ '/assets/libs/fullcalendar/css/main.min.css' | relative_url }}{%- include cache-buster.html -%}">
 
    {% endif %}
  
   {% if page.components contains 'maps' %}
 
     <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="{{ '/assets/modules/leaflet/css/leaflet.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
+    <link rel="stylesheet" href="{{ '/assets/libs/leaflet/css/leaflet.css' | relative_url }}{%- include cache-buster.html -%}">
  
     <!-- Leaflet.fullscreen CSS -->
-    <link rel="stylesheet" href="{{ '/assets/modules/leaflet.fullscreen/css/leaflet.fullscreen.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
+    <link rel="stylesheet" href="{{ '/assets/libs/leaflet.fullscreen/css/leaflet.fullscreen.css' | relative_url }}{%- include cache-buster.html -%}">
    {% endif %}
  
-   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}?v={{ 'now' | date: '%Y.%m.%d.%H.%M' }}">
+   <link rel="stylesheet" href="{{ '/assets/css/ts-styles.css' | relative_url }}{%- include cache-buster.html -%}">
   <!-- End: CSS -->
  
  </head>

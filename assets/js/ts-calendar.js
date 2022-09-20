@@ -7,11 +7,11 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  // Grab ts-calendar div.
+  // Calendar targets div with id='ts-calendar'.
   var calendarEl = document.getElementById('ts-calendar');
 
-  // Check if screen narrow.  Use to switch between calendar views.
-  function mobileCheck() {
+  // Check for narrow screens.
+  function isNarrowScreen() {
       if (window.innerWidth >= {{ site.data.calendar.break_width }} ) {
           return false;
       } else {
@@ -19,66 +19,101 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   };
 
-  // Calendar for TS schedule.
+  // Setup Calendar
   var calendar = new FullCalendar.Calendar(calendarEl, {
 
-   // ASSORTED SETTINGS 
-      timeZone: '{{ site.data.calendar.time_zone }}',
-   themeSystem: 'bootstrap5',
-      firstDay: 0,       // Sunday=0
-      editable: false,   // Stop event dragging.
-        height: 'auto',  // Fill natural height, no scrollbar and allows wrapping.
+    // -- BASIC SETTINGS ----------------------------------------------------
 
-    // CALENDAR VIEWS + SIZING
+    timeZone: '{{ site.data.calendar.time_zone }}',
+
+    // Be sure to load bootstrap and bootstrap-icons first.
+    themeSystem: 'bootstrap5',
+
+    // Sunday = 0
+    firstDay: 0,
+
+    // Stop event dragging.
+    editable: false,
+
+    // Fill natural height, no scrollbar and allows wrapping.
+    height: 'auto', 
+
+    // -- VIEWS AND SIZING --------------------------------------------------
+
+    views: {
+      // Month grid -- intended for wide screens.
+      tsGrid: {
+        type: 'dayGridMonth',
+
+        // TS beginning of time: Sept 2022.
+        validRange: { start: '2022-09-01' },
+      },
+
+      // List view -- intended for narrow screens.
+      tsList: {
+        type: 'listMonth',
+
+        // Distable past events, completely! Annoying to scroll and hard to 
+        // style properly.
+        validRange: function(nowDate) {
+          return { start: nowDate };
+        },
+      },
+    },
 
     // Pick intial view based on screensize.
-    initialView: mobileCheck() ? 'listMonth' : 'dayGridMonth',
+    initialView: isNarrowScreen() ? 'tsList' : 'tsGrid',
 
     // On window resize, change view based on size.
     windowResize: function(view) {
         if (window.innerWidth >= {{ site.data.calendar.break_width }} ) {
-            calendar.changeView('dayGridMonth');
+            calendar.changeView('tsGrid');
         } else {
-            calendar.changeView('listMonth');
+            calendar.changeView('tsList');
         }
     },
 
-    // EVENT SOURCES
-
-    // Same API key for all Google Calendars
-    googleCalendarApiKey: '{{ site.data.secrets.gcal_api_key }}',
+    // -- EVENT SOURCES -----------------------------------------------------
 
     eventSources: [
-      {% for item in site.data.calendar.event_feeds %}
+      {%- for item in site.data.calendar.event_feeds %}
         {
-          {% if item.google != null and item.google != '' %}
+          {%- if item.google %}
+            // Source: Google Calendar
             googleCalendarId: '{{ item.google }}',
-          {% elsif item.local_ics != null and item.local_ics != '' %}
-            events: {
-              url: '{{ item.local_ics | relative_url }}',
-              format: 'ics'
-            },
-          {% elsif item.ics != null and item.ics != '' %}
-            events: {
-              url: '{{ item.ics }},
-              format: 'ics'
-            },
-          {% elsif item.csv != null and item.csv != '' %}
-            events: {{ site.data.events[ item.csv ] | jsonify }},
-          {% else -%}
+            googleCalendarApiKey: '{{ site.data.secrets.gcal_api_key }}',
+          {%- elsif item.data %}
+            // Source: Site Data
+            events: 
+              {%- assign events = site.data[ item.data ] %}
+              // Filtered by:
+              {%- for filter in item.filter %}
+                // {{ filter[0] }} = {{ filter[1] }}
+                {%- assign events = events | where: filter[0], filter[1] %}
+              {%- endfor %}
+              [
+                {%- for item in events %}
+                  {
+                    title: "{{ item.title }}",
+                    start: "{{ item.start }}",
+                    {%- if item.end %}
+                      end: "{{ item.end }}",
+                    {%- endif %}
+                    {%- if item.url %}
+                      url: "{{ item.url }}",
+                    {%- endif %}
+                  },
+                {%- endfor %}
+              ],
+          {%- else %}
              {{ "Invalid Feed Type" | raise_error }}
-          {% endif %}
-          {% for keyvalue in item.options %}
+          {%- endif %}
+          {%- for keyvalue in item.options %}
             {{ keyvalue[0] }}: '{{ keyvalue[1] }}',
-          {% endfor %}
+          {%- endfor %}
         },
-      {% endfor %}
+      {%- endfor %}
     ],
-
-//   eventRender: function(calev, elt, view) {
-//     if (calev.end.getTime() < Date.now())
-//       elt.addClass("ts-past-event");
-//   }
 
   });
 

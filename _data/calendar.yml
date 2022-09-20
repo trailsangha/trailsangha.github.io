@@ -4,63 +4,112 @@
 #
 
 # When to break from list to calendar view -- same as md bootstrap breakpoint.
+#break_width: 576
 break_width: 768
 
 time_zone: "America/New_York"
 
 event_feeds:
 
-  # -- HOLIDAYS ------------------------------------------------------------ #  
+ # -- Special ------------------------------------------------------------- #
 
-  - google: en.usa.official#holiday@group.v.calendar.google.com
-    options:
-      display: background
-      className: ts-holiday-event
-      color: "#dd00bbc0"
-
-  - csv: election_days
-    options:
-      className: ts-holiday-event
-      display: background
-      color: "#dd00bbc0"
-
-  # -- SPECIAL EVENTS ------------------------------------------------------ #  
-  
-  - csv: special
+  - data: events
+    filter:
+      type: Special
+      show: x
     options:
       className: ts-special-event
       display: block
-      #      color: "#39ff00"
-      color: "#ff1900"
-      
+      color: "var(--bs-special)"
 
-  # -- WALKS --------------------------------------------------------------- #  
+  - data: events
+    filter:
+      type: Special
+      show: t
+    options:
+      className: ts-special-event
+      display: block
+      color: "var(--bs-special-300)"
 
-  - csv: short_walks
+ # -- Walk ---------------------------------------------------------------- #
+
+  - data: events
+    filter:
+      type: Walk
+      show: x
     options:
       className: ts-walk-event
       display: block
-      color: "#c8bf6a"
+      #color: "#e9e5c3"
+      color: "var(--bs-walk)"
 
-  - csv: long_walks
+  - data: events
+    filter:
+      type: Walk
+      show: t
     options:
       className: ts-walk-event
       display: block
-      color: "#c8bf6a"
+      color: "var(--bs-walk-300)"
 
-  # -- HIKES --------------------------------------------------------------- #  
-
-  - csv: day_hikes
+ # -- Hike ---------------------------------------------------------------- #
+ 
+  - data: events
+    filter:
+      type: Hike
+      show: x
     options:
       className: ts-hike-event
       display: block
-      color: "#ff9c33"
+      color: "var(--bs-hike)"
 
-  # -- TRIPS --------------------------------------------------------------- #  
+  - data: events
+    filter:
+      type: Hike
+      show: t
+    options:
+      className: ts-hike-event
+      display: block
+      color: "var(--bs-hike-300)"
 
-  - csv: trips
+ # -- Trips --------------------------------------------------------------- #
+ 
+  - data: events
+    filter:
+      type: Trip
+      show: x
     options:
       className: ts-trip-event
       display: block
-      color: "#53dfcf"
+      color: "var(--bs-trip)"
+
+  - data: events
+    filter:
+      type: Trip
+      show: t
+    options:
+      className: ts-trip-event
+      display: block
+      color: "var(--bs-trip-300)"
+
+ # -- Holidays ------------------------------------------------------------ #
+
+  - data: events
+    filter:
+      type: Holiday
+    options:
+      className: ts-holiday-event opacity-25
+      display: background
+      color: "#dd00bbc0"
+      #color: "var(--bs-holiday)"
+
+      # We basically remove google calendar, but leave functionality in
+      # place... for now.
+      #
+      # - google: en.usa.official#holiday@group.v.calendar.google.com
+      #   options:
+      #     className: ts-holiday-event opacity-25
+      #     display: background
+      #     color: "#dd00bbc0"
+      #     #color: "var(--bs-holiday)"
 

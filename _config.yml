@@ -9,26 +9,41 @@ author:
 url: https://www.trailsangha.com
 baseurl: /
 
+# Ignore by Jekyll (Compare to '.gitignore')
+#
+# Excluded files don't spawn regeneration, even if Jekyll ignores files
+# beginning with a period or underscore.
 exclude:
+  - .bundle
+  - .git
+  - .github
+  - _drafts
+  - _etc
   - vendor
-  - README.md
-  - LICENSE
+  - .gitignore
   - Gemfile
   - Gemfile.lock
+  - LICENSE
+  - README.md
+  - assets/_README-assets.md
+  - assets/css/_README-img.md
+  - assets/libs/_tar
+  - assets/libs/_README-libs.md
 
+# Embed HTML classes/styling in markdown.
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
   auto_ids: false
 
+# Some libs contain Sass code.
 sass:
   load_paths:
     - _sass
-    - assets/modules
+    - assets/libs
   style: expanded
   #style: compact
-
 
 plugins:
   - jekyll-seo-tag

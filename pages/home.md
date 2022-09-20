@@ -24,7 +24,7 @@ We practice year-round, in all kinds of weather.
 
 All are welcome, including those new to hiking, backpacking, or Zen practice.  Please read more about [about us]({{ '/about.html' | relative_url }}) and our [practice guidelines]({{ '/guidelines.html' | relative_url }}).
 
-![Mountaintop Zazen]({{ '/assets/images/bethany-zazen-small.jpg' | relative_url }}){:.mw-100 .rounded .img-fluid}
+![Mountaintop Zazen]({{ '/assets/img/bethany-zazen-small.jpg' | relative_url }}){:.mw-100 .rounded .img-fluid}
 
 # If you are new to our sangha... {#join}
 

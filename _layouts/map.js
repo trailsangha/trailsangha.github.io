@@ -1,9 +1,7 @@
 ---
 layout: map
 ---
-
 {{ content }}
-
 document.addEventListener('DOMContentLoaded', function() {
 
   // Map parameters

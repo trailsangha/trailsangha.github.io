@@ -2,7 +2,7 @@
 ---
 
 //
-// Custom Bootstrap Theming (5.2.1)
+// Customize Bootstrap (5.1.2) Theme 
 //
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
@@ -10,34 +10,22 @@
 
 // 2. Include any default variable overrides here
 
+// This space unintentially left blank ;)
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "bootstrap/_scss/variables";
 
 // 4. Include any default map overrides here
 
-$walk: #c8bf6a;       // Also in '_data/calendars.yml'.
-$hike: #ff9c33;       // Also in '_data/calendars.yml'.
-$trip: #53dfcf;       // Also in '_data/calendars.yml'.
-$holiday: #dd00bb;    // Also in '_data/calendars.yml' (sans transparency).
-$special: #ff1900;    // Also in '_data/claendars.yml'
+$walk:    #c8bf6a;
+$hike:    #ff9c33;
+$trip:    #53dfcf;
+$holiday: #dd00bb;    // See '_data/calendar.yml'
+$special: #ff1900;
 $past:    $gray-500;
 $footer:  $gray-300;
 $hard:    $gray-800;
 $soft:    $gray-700;
-
-$ts-colors: (
-  "walk":    $walk,
-  "hike":    $hike,
-  "trip":    $trip,
-  "holiday": $holiday,
-  "special": $special,
-  "past":    $past,
-  "footer":  $footer,
-  "hard":    $hard,
-  "soft":    $soft
-);
-
-$colors: map-merge($colors, $ts-colors);
 
 $walk-100: tint-color($walk, 80%);
 $walk-200: tint-color($walk, 60%);
@@ -88,6 +76,90 @@ $special-600: shade-color($special, 20%);
 $special-700: shade-color($special, 40%);
 $special-800: shade-color($special, 60%);
 $special-900: shade-color($special, 80%);
+
+$past-100: tint-color($past, 80%);
+$past-200: tint-color($past, 60%);
+$past-300: tint-color($past, 40%);
+$past-400: tint-color($past, 20%);
+$past-500: $past;
+$past-600: shade-color($past, 20%);
+$past-700: shade-color($past, 40%);
+$past-800: shade-color($past, 60%);
+$past-900: shade-color($past, 80%);
+
+$ts-colors: (
+  "walk":    $walk,
+  "hike":    $hike,
+  "trip":    $trip,
+  "holiday": $holiday,
+  "special": $special,
+  "past":    $past,
+  "footer":  $footer,
+  "hard":    $hard,
+  "soft":    $soft,
+  //
+  "walk-100": $walk-100,
+  "walk-200": $walk-200,
+  "walk-300": $walk-300,
+  "walk-400": $walk-400,
+  "walk-500": $walk-500,
+  "walk-600": $walk-600,
+  "walk-700": $walk-700,
+  "walk-800": $walk-800,
+  "walk-900": $walk-900,
+  //
+  "hike-100": $hike-100,
+  "hike-200": $hike-200,
+  "hike-300": $hike-300,
+  "hike-400": $hike-400,
+  "hike-500": $hike-500,
+  "hike-600": $hike-600,
+  "hike-700": $hike-700,
+  "hike-800": $hike-800,
+  "hike-900": $hike-900,
+  //
+  "trip-100": $trip-100,
+  "trip-200": $trip-200,
+  "trip-300": $trip-300,
+  "trip-400": $trip-400,
+  "trip-500": $trip-500,
+  "trip-600": $trip-600,
+  "trip-700": $trip-700,
+  "trip-800": $trip-800,
+  "trip-900": $trip-900,
+  //
+  "holiday-100": $holiday-100,
+  "holiday-200": $holiday-200,
+  "holiday-300": $holiday-300,
+  "holiday-400": $holiday-400,
+  "holiday-500": $holiday-500,
+  "holiday-600": $holiday-600,
+  "holiday-700": $holiday-700,
+  "holiday-800": $holiday-800,
+  "holiday-900": $holiday-900,
+  //
+  "special-100": $special-100,
+  "special-200": $special-200,
+  "special-300": $special-300,
+  "special-400": $special-400,
+  "special-500": $special-500,
+  "special-600": $special-600,
+  "special-700": $special-700,
+  "special-800": $special-800,
+  "special-900": $special-900,
+  //
+  "past-100": $past-100,
+  "past-200": $past-200,
+  "past-300": $past-300,
+  "past-400": $past-400,
+  "past-500": $past-500,
+  "past-600": $past-600,
+  "past-700": $past-700,
+  "past-800": $past-800,
+  "past-900": $past-900
+);
+
+$colors: map-merge($colors, $ts-colors);
 
 // Theme colors
 
@@ -147,15 +219,15 @@ $theme-colors: map-merge($theme-colors, $ts-theme-colors);
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `utilities.scss`
 
-// Make width responsive (w-100 w-md-75 w-lg-50)
-$utilities: map-merge(
-  $utilities, (
-    "width": map-merge(
-      map-get($utilities, "width"),
-      ( responsive: true ),
-    ),
-  )
-);
+// // Make width responsive (w-100 w-md-75 w-lg-50)
+// $utilities: map-merge(
+//   $utilities, (
+//     "width": map-merge(
+//       map-get($utilities, "width"),
+//       ( responsive: true ),
+//     ),
+//   )
+// );
 
 @import "bootstrap/_scss/utilities/api";
 
