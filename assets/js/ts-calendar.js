@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         type: 'dayGridMonth',
 
         // TS beginning of time: Sept 2022.
-        validRange: { start: '2022-09-01' },
+        // validRange: { start: '2022-09-01' },
       },
 
       // List view -- intended for narrow screens.
