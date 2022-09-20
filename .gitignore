@@ -15,7 +15,7 @@ Gemfile.lock
 .bundle/
 
 # Just having 'vendor/' will cause an error in Github Pages + Bootstrap.
-vendor/bundle
+vendor/bundle/
 
 # Don't save secrets, even if you whisper them aloud.
 _data/secrets.yml
