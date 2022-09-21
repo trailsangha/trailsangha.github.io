@@ -7,7 +7,7 @@ title: About
 <div class="row" markdown=1>
 <div class="col-sm-10 col-md-9 col-lg-8" markdown=1>
 
-# About
+# About {#main}
 
 Thru-hikers on long distance footpaths like the Pacific Crest Trail often call their hiking partners "trail family."  We are a "trail sangha," supporting each other in a Zen practice adapted to being on trail.
 

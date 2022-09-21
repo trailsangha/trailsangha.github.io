@@ -25,14 +25,14 @@ items:
     url: /#calendar
 
   - name: About
-    url: /about.html
+    url: /about.html#main
 
   - name: Guidelines
-    url: /guidelines.html
+    url: /guidelines.html#main
 
 #  - name: Resources
 #    url: /resources.html
 
   - name: Contact
-    url: /contact.html
+    url: /contact.html#main
 

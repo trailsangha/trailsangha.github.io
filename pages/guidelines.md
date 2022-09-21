@@ -7,7 +7,7 @@ title: Practice Guidelines
 <div class="row" markdown=1>
 <div class="col-sm-10 col-md-9 col-lg-8" markdown=1>
 
-# Practice Guidelines
+# Practice Guidelines {#main}
 
 Participation is open to all who can practice within our sangha guidelines.  Our guidelines are here to help give you a sense of what to expect and to help us maintain our safety and ability to function as a group.
 
