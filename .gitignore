@@ -3,7 +3,7 @@
 # Ignore by Git (Compare to excludes in Jekyll's '_config.yml'.)
 #
 
-# Jekyll
+  # Jekyll
 
 _site/
 .sass-cache/
@@ -23,3 +23,6 @@ _data/secrets.yml
 # This gets created from '_data/events.ods'
 # _data/events.csv
 
+  # LibreOffice
+
+.~lock.*#
