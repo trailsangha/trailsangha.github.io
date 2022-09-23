@@ -18,11 +18,11 @@ assets:
 
 We are a hiking-oriented sangha in New York City.
 
-Our [practice schedule]({{ '/#calendar' | relative_url }}) consists of walks and hike in and around New York City that are accessible by public transit, including overnight and multi-day backpacking trips.
+Our [practice schedule]({{ '/#calendar' | relative_url }}) consists of walks and hikes in and around New York City that are accessible by public transit, including overnight and multi-day backpacking trips.
 
-We practice year-round, in all kinds of weather.
+We practice year round, in all kinds of weather.
 
-All are welcome, including those new to hiking, backpacking, or Zen practice.  Please read more about [about us]({{ '/about.html' | relative_url }}) and our [practice guidelines]({{ '/guidelines.html' | relative_url }}).
+All are welcome, including those new to hiking, backpacking, and Zen practice.  Please read more about [about us]({{ '/about.html' | relative_url }}) and our [practice guidelines]({{ '/guidelines.html' | relative_url }}).
 
 ![Mountaintop Zazen]({{ '/assets/img/bethany-zazen-small.jpg' | relative_url }}){:.mw-100 .rounded .img-fluid}
 
