@@ -46,6 +46,13 @@ jobs:
         shell: bash
         env: 
           GCAL_API_KEY: ${{ secrets.GCAL_API_KEY }}
+
+      - name: Convert events from ODS to CSV
+        uses: ./.github/actions/libreoffice
+        with:
+          command: |
+            libreoffice --headless --invisible --version
+
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"

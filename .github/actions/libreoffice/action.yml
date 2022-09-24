@@ -1,0 +1,21 @@
+
+#
+# Action config.
+#
+
+name: 'Libreoffice'
+description: 'Run a LibreOffice command.'
+inputs:
+  command:  # ID of input
+    description: 'Command for action to run.'
+    required: true
+    default: 'libreoffice --headless --invisible --version'
+    # outputs:
+    #   time: # ID of output
+    #     description: 'Desc of outputs'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
+
