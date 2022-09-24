@@ -29,7 +29,7 @@ event_feeds:
     options:
       className: ts-special-event
       display: block
-      color: "var(--bs-special-300)"
+      color: "var(--bs-special-200)"
 
  # -- Walk ---------------------------------------------------------------- #
 
@@ -50,7 +50,7 @@ event_feeds:
     options:
       className: ts-walk-event
       display: block
-      color: "var(--bs-walk-300)"
+      color: "var(--bs-walk-200)"
 
  # -- Hike ---------------------------------------------------------------- #
  
@@ -70,7 +70,7 @@ event_feeds:
     options:
       className: ts-hike-event
       display: block
-      color: "var(--bs-hike-300)"
+      color: "var(--bs-hike-200)"
 
  # -- Trips --------------------------------------------------------------- #
  
@@ -90,7 +90,7 @@ event_feeds:
     options:
       className: ts-trip-event
       display: block
-      color: "var(--bs-trip-300)"
+      color: "var(--bs-trip-200)"
 
  # -- Holidays ------------------------------------------------------------ #
 
