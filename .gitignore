@@ -3,7 +3,7 @@
 # Ignore by Git (Compare to excludes in Jekyll's '_config.yml'.)
 #
 
-  # Jekyll
+####### Jekyll
 
 _site/
 .sass-cache/
@@ -14,15 +14,30 @@ Gemfile.lock
 
 .bundle/
 
-# Just having 'vendor/' will cause an error in Github Pages + Bootstrap.
+# Just having `vendor/` or `vendor/bundle` cause a path issue between
+# the GitHub action that builds the site and bootstrap.
 ./vendor/bundle/
 
-# Don't save secrets, even if you whisper them aloud.
-_data/secrets.yml
-
-# This gets created from '_data/events.ods'
-# _data/events.csv
-
-  # LibreOffice
+####### LibreOffice
 
 .~lock.*#
+
+####### GitHub Secrets
+
+# The github action appends the API keys to this file.  
+# Store them locally in this file.
+_data/secrets.yml
+
+####### Events data
+
+# Events are stored in `_etc/events.ods` but used 
+# as `_data/events.csv`.
+#
+# To get the csv file, either
+#
+#   1. Manually run `./_etc/convert-events-to-csv.sh`, or
+#   2. Use the GitHub action `.github/actions/libreoffice`.
+#
+
+_data/events.csv
+
