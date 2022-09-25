@@ -1,0 +1,12 @@
+
+#
+# Info for meta tags
+#
+
+name: Trail Sangha
+description: "Hiking-oriented Zen group in New York City."
+
+locale: "en-US"
+# 'timezone' in _config.yml
+# 'encoding' in _config.yml
+

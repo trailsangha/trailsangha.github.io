@@ -1,23 +1,8 @@
-title: Trail Sangha
-tagline: "Hiking-oriented Zen group in New York City."
-email: tailshanga@gmail.com
-description: > 
-  We are a hiking-oriented Zen group in New York City.
-  
-  Our pracice schedule consists of walks and hikes in and around the NYC area that are accessible by public transit, including overnight and multi-day backpacking trips.  
-  
-  We pracice year round, in all kinds of weather.
 
-  All are welcome, including those new to hiking, packpacking and Zen practice.  
-author:
-  name: Trail Sangha
-url: https://www.trailsangha.com
-baseurl: /
+timezone: "America/New_York"
+encoding: "utf-8"
 
-# Ignore by Jekyll (Compare to '.gitignore')
-#
-# Excluded files don't spawn regeneration, even if Jekyll ignores files
-# beginning with a period or underscore.
+# Exclude from build AND don't cause regeneration
 exclude:
   - .bundle
   - .git
@@ -33,38 +18,46 @@ exclude:
   - assets/_README-assets.md
   - assets/css/_README-img.md
   - assets/libs/_tar
+  - assets/libs/fullcalendar/css/main.css
+  - assets/libs/fullcalendar/js/main.js
+  - assets/libs/leaflet.fullscreen/js/leaflet.fullscreen.js
   - assets/libs/_README-libs.md
-
-# Embed HTML classes/styling in markdown.
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  auto_ids: false
-
-# Some libs contain Sass code.
-sass:
-  load_paths:
-    - _sass
-    - assets/libs
-  style: expanded
-  #style: compact
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-relative-links
-    
-relative_links:
-  enabled:     true
-  collections: false
 
 defaults:
   -
     scope:
-      path: "" 
+      path: "" # Empty string = All files in project.
     values:
       layout: default
       components: []
       hotbuttons: false
+      assets:
+        js: []
+
+strict_front_matter: true
+liquid:
+  error_mode: strict
+  strict_filters: true 
+  strict_variables: false # 'true' breaks jekyll-sitemap plugin.
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap  # Breaks liquid: strict_filters: true
+  - jekyll-relative-links
+
+    # relative_links:
+    #   enabled: true
+    #   collections: false
+
+sass:
+  sass_dir: _sass
+  load_paths:
+    - _sass
+    - assets/libs
+  style: expanded
+
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  auto_ids: false
 
