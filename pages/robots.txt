@@ -1,0 +1,16 @@
+---
+layout: default
+permalink: /robots.txt
+sitemap:
+  exclude: 'yes'
+---
+
+#
+# See http://www.robotstxt.org/robotstxt.html
+#
+
+User-agent: *
+Disallow: /assets/
+
+Sitemap: https://www.trailsangha.com/sitemap.xml
+
