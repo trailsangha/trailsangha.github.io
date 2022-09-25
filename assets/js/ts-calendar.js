@@ -78,11 +78,11 @@ document.addEventListener('DOMContentLoaded', function() {
     eventSources: [
       {%- for item in site.data.calendar.event_feeds %}
         {
-          {%- if item.google %}
+          {%- if item contains 'google' %}
             // Source: Google Calendar
             googleCalendarId: '{{ item.google }}',
             googleCalendarApiKey: '{{ site.data.secrets.gcal_api_key }}',
-          {%- elsif item.data %}
+          {%- elsif item contains 'data' %}
             // Source: Site Data
             events: 
               {%- assign events = site.data[ item.data ] %}
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 {%- endfor %}
               ],
           {%- else %}
-             {{ "Invalid Feed Type" | raise_error }}
+             {{ "Invalid event feed." | raise_error }}
           {%- endif %}
           {%- for keyvalue in item.options %}
             {{ keyvalue[0] }}: '{{ keyvalue[1] }}',
