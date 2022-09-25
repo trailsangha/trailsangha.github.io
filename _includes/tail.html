@@ -19,4 +19,3 @@
 {% for item in page.assets.js %}
   <script src="{{ item | relative_url }}{%- include cache-buster.html -%}"></script>
 {% endfor %}
-
