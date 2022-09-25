@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /index.html
+permalink: /
 title: Home
 hotbuttons: true
 components: [maps, calendar]
