@@ -35,5 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // Activate Leaflet.fullscreen plugin:
   map.addControl(new L.Control.Fullscreen(false));
 
+  // Require focus for zooming
+  map.scrollWheelZoom.disable()
+  map.on('focus', () => { map.scrollWheelZoom.enable()  })
+  map.on('blur',  () => { map.scrollWheelZoom.disable() })
+
 });
 
