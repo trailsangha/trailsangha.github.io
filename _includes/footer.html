@@ -14,7 +14,10 @@
     <p class="fs-6 text-muted">
       {{ site.data.footer.address }}<br>
       <a href="mailto:{{ site.data.footer.email }}" class="link-soft">{{ site.data.footer.email }}</a><br>
+      {% comment %}
+      Causes mobility issue:
       <a href="{{ site.data.footer.url }}" class="link-soft">{{ site.data.footer.web }}</a><br>
+      {% endcomment %}
       <small>&copy;&nbsp;Copyright&nbsp;{{ site.time | date: '%Y' }},&nbsp;{{site.data.footer.name}}</small>
     </p>
     </span>
@@ -28,16 +31,13 @@
   <!-- Basic Navigation -->
   <div class="col-sm-6 align-self-center">
     <nav>
-      <p class="fs-5 text-uppercase">
         {% for item in site.data.nav.items %}
-          <a href="{{ item.url | relative_url }}" class="link-dark">
+          <p class="fs-5 text-uppercase p-0">
+            <a href="{{ item.url | relative_url }}" class="link-dark">
               {{ item.name }}
-          </a>
-          {%- unless forloop.last -%}
-            <br>
-          {% endunless %}
+            </a>
+          </p>
         {% endfor %}
-      </p>
     </nav>
   </div>
 
