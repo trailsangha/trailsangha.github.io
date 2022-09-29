@@ -12,12 +12,15 @@
       >
     </a>
     <p class="fs-6 text-muted">
-      {{ site.data.footer.address }}<br>
-      <a href="mailto:{{ site.data.footer.email }}" class="link-soft">{{ site.data.footer.email }}</a><br>
-      {% comment %}
-      Causes mobility issue:
-      <a href="{{ site.data.footer.url }}" class="link-soft">{{ site.data.footer.web }}</a><br>
-      {% endcomment %}
+      {{ site.data.footer.address }}
+    </p>
+    <p class="fs-6 text-muted">
+      <a href="mailto:{{ site.data.footer.email }}" class="link-soft">{{ site.data.footer.email }}</a>
+    </p>
+    <p class="fs-6 text-muted">
+      <a href="{{ site.data.footer.url }}" class="link-soft">{{ site.data.footer.web }}</a>
+    </p>
+    <p class="fs-6 text-muted">
       <small>&copy;&nbsp;Copyright&nbsp;{{ site.time | date: '%Y' }},&nbsp;{{site.data.footer.name}}</small>
     </p>
     </span>
