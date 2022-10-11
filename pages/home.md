@@ -80,5 +80,5 @@ Hiking and backpacking trips are open to established sangha members (and others 
 
 # Calendar {#calendar}
 
-<div id="ts-calendar"></div>
+<div id="ts-calendar">Calendar: Trail Sangha events (requires JavaScript).</div>
 

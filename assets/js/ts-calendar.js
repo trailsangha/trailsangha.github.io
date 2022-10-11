@@ -117,6 +117,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 
+  // Clear alternate text from calendar div.
+  calendarEl.removeChild(calendarEl.firstChild);
+
   calendar.render();
 
 });
