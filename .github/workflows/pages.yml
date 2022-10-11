@@ -56,7 +56,7 @@ jobs:
         with:
           command: |
             # libreoffice --headless --invisible --version
-            libreoffice --invisible --headless --convert-to csv "_etc/events.ods" --outdir "_data"
+            libreoffice --invisible --headless --convert-to csv "_etc/events/events.ods" --outdir "_data"
 
 
       - name: Build with Jekyll
