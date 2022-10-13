@@ -3,19 +3,15 @@ url: https://www.trailsangha.com
 timezone: "America/New_York"
 encoding: "utf-8"
 
-# Exclude from build AND don't cause regeneration
+# Files and dirs beginning with dot or underscore are not processed by Jekyll
+# itself, but still induce site regeneration. Excluding them here prevents 
+# regeneration, too.
 exclude:
   - .bundle
   - .git
   - .github
   - _drafts
   - _etc
-  - vendor
-  - .gitignore
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
   - assets/_README-assets.md
   - assets/css/_README-img.md
   - assets/css/img/_sources
@@ -24,6 +20,12 @@ exclude:
   - assets/libs/fullcalendar/js/main.js
   - assets/libs/leaflet.fullscreen/js/leaflet.fullscreen.js
   - assets/libs/_README-libs.md
+  - vendor
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
 
 defaults:
   -
