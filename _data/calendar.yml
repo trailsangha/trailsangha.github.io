@@ -102,8 +102,9 @@ event_feeds:
       className: ts-holiday-event
       display: background
       #color: "#dd00bbc0"
-      backgroundColor: "var(--bs-holiday-200)"
-      textColor: 'black'
+      color: "var(--bs-holiday-200)"
+      # textColor currently doesn't work for background events.
+      # textColor: 'black'
 
   - data: events
     filter:
@@ -113,8 +114,9 @@ event_feeds:
       className: ts-holiday-event
       display: background
       #color: "#dd00bbc0"
-      backgroundColor: "var(--bs-holiday-200)"
-      textColor: 'black'
+      color: "var(--bs-holiday-200)"
+      # textColor currently doesn't work for background events.
+      # textColor: 'black'
 
 
       # We basically remove google calendar, but leave functionality in
