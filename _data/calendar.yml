@@ -97,11 +97,25 @@ event_feeds:
   - data: events
     filter:
       type: Holiday
+      show: x
     options:
-      className: ts-holiday-event opacity-25
+      className: ts-holiday-event
       display: background
-      color: "#dd00bbc0"
-      #color: "var(--bs-holiday)"
+      #color: "#dd00bbc0"
+      backgroundColor: "var(--bs-holiday-200)"
+      textColor: 'black'
+
+  - data: events
+    filter:
+      type: Holiday
+      show: t
+    options:
+      className: ts-holiday-event
+      display: background
+      #color: "#dd00bbc0"
+      backgroundColor: "var(--bs-holiday-200)"
+      textColor: 'black'
+
 
       # We basically remove google calendar, but leave functionality in
       # place... for now.
