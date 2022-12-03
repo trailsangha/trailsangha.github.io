@@ -36,7 +36,7 @@ Please:
 2. Bring appropriate clothing, water, (snacks, etc.), and
 3. Plan to arrive a few minutes early.
 
-Expect to walk most of the time at a __moderate pace (2-3 mph)__.  Walks usually last __1-2hrs on weekdays__, and __3-4hrs on weekends__, depending on season (etc.).
+Expect to walk most of the time at a __moderate pace (2-3 mph)__.  Walks usually last __1-2hrs__, depending on season (etc.).
 
 # Where to Find Us {#find-us}
 
