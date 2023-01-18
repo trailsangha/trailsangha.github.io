@@ -2,81 +2,41 @@
 layout: page
 permalink: /
 title: Home
-hotbuttons: true
+hotbuttons: false
 components: [maps, calendar]
 assets:
   js:
   - /assets/js/ts-map-morningside-116th-guardhouse.js
-  - /assets/js/ts-map-inwood-hill-se-corner.js
   - /assets/js/ts-calendar.js
 ---
 
-<div class="row" markdown=1>
-<div class="col-sm-10 col-md-9 col-lg-8" markdown=1>
+{% include narrow-left-beg.html %}
 
-# Hi, welcome!  Wanna join us for a silent hike?
+# Hi, welcome! {#about}
 
-We are a hiking-oriented sangha in New York City.
+My name is Cameron Crowe, I live in New York City, and I'm looking for others who share my dual interest in hiking and Zen.
 
-Our [practice schedule]({{ '/#calendar' | relative_url }}) consists of walks and hikes in and around New York City that are accessible by public transit, including overnight and multi-day backpacking trips.
+![Cam with Rakusu]({{ '/assets/img/cam-rakusu-small.jpg' | relative_url }}){: .rounded .m-auto height="300"}
 
-We practice year round, in all kinds of weather.
+I see the trail as a perfect place for Zen practice, and thru-hiking as a Western equivalent of going on a wandering retreat.
 
-All are welcome, including those new to hiking, backpacking, and Zen practice.  Please read more about [about us]({{ '/about.html' | relative_url }}) and our [practice guidelines]({{ '/guidelines.html' | relative_url }}).
+I took the precepts at Ordinary Mind Zendo with my teacher, Barry Magid.  And I prefer a psychologically minded Zen practice along the lines of Joko Beck and the Ordinary Mind Zen School.
 
-![Mountaintop Zazen]({{ '/assets/img/bethany-zazen-small.jpg' | relative_url }}){:.mw-100 .rounded .img-fluid}
+"Trail sangha" doesn't refer to a particular sangha, but rather to any sangha that forms on trail, analogous to what thru-hikers call "trail family".
 
-# If you are new to our sangha... {#join}
+I'm considering a PCT thru-hike for 2024 or 2025, and I regularly go backpacking in the NYC area.
 
-We invite you to __join us for a walk in NYC__!
+I also practice locally in NYC, and you are most welcome to join:
 
-Please:
+# NYC Practice Schedule {#practice}
 
-1. [Let us know]({{ '/contact.html' | relative_url }}) you're coming,
-2. Bring appropriate clothing, water, (snacks, etc.), and
-3. Plan to arrive a few minutes early.
+Most [__weekday mornings__](#calendar) at __sunrise__, starting near the __116th Street guardhouse at the top of Morningside Park__ (W116th Street and Morningside Drive).  Expect to walk most of the time at a moderate pace (__2-3mph__ for __60-90min__).
 
-Expect to walk most of the time at a __moderate pace (2-3 mph)__.  Walks usually last __1-2hrs__, depending on season (etc.).
+If this is your first time, please let me know you're coming: [trailsangha@gmail.com](mailto:trailsangha@gmail.com).
 
-# Where to Find Us {#find-us}
-
-</div>
-</div>
-
-<div class="row" markdown=1>
-<div class="col-md-6" markdown=1>
-
-## <span class="badge bg-walk">Short Walks</span>
-
-{% comment %}
-Currently meeting: Most __[Mon, Wed, and Fri mornings](#calendar)__ at __Sunrise__ on the __SW Corner of Morningside Park__ (intersection of Cathedral Parkway and Morningside Drive).
-<div id="ts-map-morningside-sw-corner" class="container-fluid ts-map-basic" >Map: Morningside Park SW Corner</div>
-{% endcomment %}
-
-Currently meeting: Most __[Mon, Wed, and Fri mornings](#calendar)__ at __Sunrise__ near the guardhouse at __116th Street Guardhouse above Morningside park__ (116th Street and Morningside Drive).
 <div id="ts-map-morningside-116th-guardhouse" class="container-fluid ts-map-basic" >Map: Morningside Park 116th Street Guardhouse</div>
 
-</div>
-
-<div class="col-md-6" markdown=1>
-
-## <span class="badge bg-walk">Long Walks</span>
-
-Currently meeting: Roughly every other __[Sunday morning](#calendar)__ at __Sunrise__ at the __NE entrance to Inwood Hill Park__ (intersection of Indian Road and West 218th Street).
-  <div id="ts-map-inwood-hill-se-corner" class="container-fluid ts-map-basic">Map: Inwood Hill Park SE Corner</div>
-
-</div>
-</div>
-
-<div class="row" markdown=1>
-<div class="col-lg-6" markdown=1>
-
-## <span class="badge bg-hike">Day Hikes</span> <span class="badge bg-trip">Backpacking Trips</span>
-
-Hiking and backpacking trips are open to established sangha members (and others on a case-by-case basis---please [contact us]({{ '/contact.html' | relative_url }})).
-
-</div>
-</div>
+{% include narrow-left-end.html %}
 
 # Calendar {#calendar}
 
