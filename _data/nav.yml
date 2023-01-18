@@ -12,27 +12,15 @@ brand:
   url: /
 
 items:
-  - name: Home
-    url: /
+  - name: About
+    url: /#about
 
-  - name: Join 
-    url: /#join
-
-  - name: Find&nbsp;Us
-    url: /#find-us
+  - name: Practice
+    url: /#practice
 
   - name: Calendar
     url: /#calendar
 
-  - name: About
-    url: /about.html#main
-
-  - name: Guidelines
-    url: /guidelines.html#main
-
-#  - name: Resources
-#    url: /resources.html
-
   - name: Contact
-    url: /contact.html#main
+    url: /#contact
 
