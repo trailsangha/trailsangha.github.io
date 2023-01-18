@@ -20,13 +20,13 @@ My name is Cameron Crowe, I live in New York City, and I'm looking for others wh
 
 I see the trail as a perfect place for Zen practice, and thru-hiking as a Western equivalent of going on a wandering retreat.
 
-I took the precepts at Ordinary Mind Zendo with my teacher, Barry Magid.  And I prefer a psychologically minded Zen practice along the lines of Joko Beck and the Ordinary Mind Zen School.
+I took the precepts with Barry Magid, and I prefer a psychologically minded Zen practice along the lines of Joko Beck and the Ordinary Mind Zen School.
 
 "Trail sangha" doesn't refer to a particular sangha, but rather to any sangha that forms on trail, analogous to what thru-hikers call "trail family".
 
 I'm considering a PCT thru-hike for 2024 or 2025, and I regularly go backpacking in the NYC area.
 
-I also practice locally in NYC, and you are most welcome to join:
+I also practice locally in NYC, and you are most welcome to join!
 
 # NYC Practice Schedule {#practice}
 
