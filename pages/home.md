@@ -22,7 +22,7 @@ I see the trail as a perfect place for Zen practice, and thru-hiking as a Wester
 
 I took the precepts with Barry Magid, and I prefer a psychologically minded Zen practice along the lines of Joko Beck and the Ordinary Mind Zen School.
 
-"Trail sangha" doesn't refer to a particular sangha, but rather to any sangha that forms on trail, analogous to what thru-hikers call "trail family".
+"Trail sangha" does not refer to a particular sangha, but to any sangha that forms on trail.  Analogous to what thru-hikers call "trail family".
 
 I'm considering a PCT thru-hike for 2024 or 2025, and I regularly go backpacking in the NYC area.
 
@@ -30,7 +30,7 @@ I also practice locally in NYC, and you are most welcome to join!
 
 # NYC Practice Schedule {#practice}
 
-Most [__weekday mornings__](#calendar) at __sunrise__, starting near the __116th Street guardhouse at the top of Morningside Park__ (W116th Street and Morningside Drive).  Expect to walk most of the time at a moderate pace (__2-3mph__ for __60-90min__).
+Most [__weekday mornings__](#calendar) at __sunrise__, starting near the __116th Street guardhouse at the top of Morningside Park__ (W116th Street and Morningside Drive).  Expect to walk most of the time at a moderate pace (__2-3mph__) for __60-90min__.  
 
 If this is your first time, please let me know you're coming: [trailsangha@gmail.com](mailto:trailsangha@gmail.com).
 
