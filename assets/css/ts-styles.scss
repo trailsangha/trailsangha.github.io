@@ -72,10 +72,12 @@ h6 {
 //   [x] hide past events in listView, or 
 //   [ ] use targeted media query, etc.
 //
-.fc-event-past{
-  background-color: var(--bs-past)!important; 
-  border-color:     var(--bs-past)!important;
-}
+// Yesterday's block events seem to spill into today.
+// .fc-day-past{
+//   background-color: var(--bs-past-100)!important; 
+//   border-color:     var(--bs-past)!important;
+// }
+
 
 // Can gray out past event day backgrounds... but this appears to mess up
 // up the grid colors.
