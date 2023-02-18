@@ -3,10 +3,8 @@
 A hiking-oriented Zen group in New York City.
 
 - [Home](https://www.trailsangha.com)
-- [Join](https://www.trailsangha.com/#join)
-- [Find Us](https://www.trailsangha.com/#find-us)
+- [About](https://www.trailsangha.com/#about)
+- [Practice](https://www.trailsangha.com/#practice)
 - [Calendar](https://www.trailsangha.com/#calendar)
-- [About](https://www.trailsangha.com/about.html#main)
-- [Guidelines](https://www.trailsangha.com/guidelines.html#main)
-- [Contact](https://www.trailsangha.com/contact.html#main)
+- [Contact](https://www.trailsangha.com/#contact)
 
