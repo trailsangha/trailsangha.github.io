@@ -18,7 +18,7 @@ My name is Cameron Crowe, I live in New York City, and I'm looking for others wh
 
 ![Cam with Rakusu]({{ '/assets/img/cam-rakusu-small.jpg' | relative_url }}){: .rounded .m-auto height="300"}
 
-I see the trail as a perfect place for Zen practice, and thru-hiking as a Western equivalent of wandering retreat.
+I see the trail as a perfect place for Zen practice, and thru-hiking as kind of wandering retreat.
 
 I took the precepts with Barry Magid, and I prefer a psychologically minded Zen practice along the lines of Joko Beck and the Ordinary Mind Zen School.
 
