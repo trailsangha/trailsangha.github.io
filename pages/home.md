@@ -18,7 +18,7 @@ My name is Cameron Crowe, I live in New York City, and I'm looking for others wh
 
 ![Cam with Rakusu]({{ '/assets/img/cam-rakusu-small.jpg' | relative_url }}){: .rounded .m-auto height="300"}
 
-I see the trail as a perfect place for Zen practice, and thru-hiking as a Western equivalent of a wandering retreat.
+I see the trail as a perfect place for Zen practice, and thru-hiking as a Western equivalent of wandering retreat.
 
 I took the precepts with Barry Magid, and I prefer a psychologically minded Zen practice along the lines of Joko Beck and the Ordinary Mind Zen School.
 
@@ -30,7 +30,7 @@ I also practice locally in NYC, and you are most welcome to join!
 
 # NYC Practice Schedule {#practice}
 
-Updated: {{ site.time | date: '%B %d, %Y'}}.
+Last updated: {{ site.time | date: '%B %d, %Y'}}.
 
 Most [__Thursday mornings__](#calendar) at __sunrise__, starting near the __116th Street guardhouse at the top of Morningside Park__ (W116th Street and Morningside Drive).  Please expect to walk most of the time at a moderate pace (__2-3mph__) for around __60min__.
 
