@@ -2,7 +2,7 @@
 Modules
 =======
 
-Beware! `/assets/modules` added to SASS load dirs in config, so keek Jekyll out 
+Beware! `/assets/modules` added to SASS load dirs in config, so keep Jekyll out 
 by adding an underscore to SASS code (i.e. `_scss`).
 
 Included Modules
