@@ -18,8 +18,6 @@ Zen and hiking are many things to many people, but I think what we seek in them 
 
 My favorite Zen teachers are Barry Magid (with whom I took the precepts) and Karen Terzano (a fellow hiker), and I feel like Zen practice is largely about showing up and being honest. Whatever practice is, I hope we can find a way to do it together... on a trail through the forest :) 
 
-I spent the last several years practicing in Ordinary Mind Zendo in NYC and local, and I took the precepts with Barry Magid in 2022. And I'm considering a PCT thru-hike for 2024 or 2025.
-
 If something of this resonates with you or you want to find a way to practice together---and especially if you can think of a good trail name for a hiking sangha ;)---I would love to [hear from you](#contact)!
 
 Happy trails!
