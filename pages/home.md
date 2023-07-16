@@ -2,45 +2,28 @@
 layout: page
 permalink: /
 title: Home
-hotbuttons: false
-components: [maps, calendar]
-assets:
-  js:
-  - /assets/js/ts-map-morningside-116th-guardhouse.js
-  - /assets/js/ts-calendar.js
 ---
+{%- comment %}
 
+This is a greatly simplified version of this page. Look in drafts folder.  Map, calendar, "hotbutton"s available from when I was trying to do daily walking practice in NYC.
+
+{% endcomment -%}
 {% include narrow-left-beg.html %}
 
 # Hi, welcome! {#about}
 
 My name is Cameron Crowe, I live in New York City, and I'm looking for others who share my dual interest in hiking and Zen.
 
+Zen and hiking are many things to many people, but I think what we seek in them is largely the same: escape, structure, safety, meaning, connection, etc.---all just very ordinary, human things. It's not my belief that ordinary humans need extraordinary practices. Rather, I think those of us drawn to practice on trail or on a cushion would be wise to spend our time simply addressing what brings us here.
+
+My favorite Zen teachers are Barry Magid (with whom I took the precepts) and Karen Terzano (a fellow hiker), and I feel like Zen practice is largely about showing up and being honest. Whatever practice is, I hope we can find a way to do it together... on a trail through the forest :) 
+
+I spent the last several years practicing in Ordinary Mind Zendo in NYC and local, and I took the precepts with Barry Magid in 2022. And I'm considering a PCT thru-hike for 2024 or 2025.
+
+If something of this resonates with you or you want to find a way to practice together---and especially if you can think of a good trail name for a hiking sangha ;)---I would love to [hear from you](#contact)!
+
+Happy trails!
+
 ![Cam with Rakusu]({{ '/assets/img/cam-rakusu-small.jpg' | relative_url }}){: .rounded .m-auto height="300"}
 
-I see the trail as a perfect place for Zen practice, and thru-hiking as kind of wandering retreat.
-
-I took the precepts with Barry Magid, and I prefer a psychologically minded Zen practice along the lines of Joko Beck and the Ordinary Mind Zen School.
-
-"Trail sangha" does not refer to a particular sangha, but to any sangha that forms on trail.  Analogous to what thru-hikers call "trail family".
-
-I'm considering a PCT thru-hike for 2024 or 2025, and I regularly go backpacking in the NYC area.
-
-I also practice locally in NYC, and you are most welcome to join!
-
-# NYC Practice Schedule {#practice}
-
-Last updated: {{ site.time | date: '%B %d, %Y'}}.
-
-Most [__Thursday mornings__](#calendar) at __sunrise__, starting near the __116th Street guardhouse at the top of Morningside Park__ (W116th Street and Morningside Drive).  Please expect to walk most of the time at a moderate pace (__2-3mph__) for around __60min__.
-
-If this is your first time, please let me know you're coming: [trailsangha@gmail.com](mailto:trailsangha@gmail.com).
-
-<div id="ts-map-morningside-116th-guardhouse" class="container-fluid ts-map-basic" >Map: Morningside Park 116th Street Guardhouse</div>
-
-{% include narrow-left-end.html %}
-
-# Calendar {#calendar}
-
-<div id="ts-calendar">Calendar: Trail Sangha events (requires JavaScript).</div>
 

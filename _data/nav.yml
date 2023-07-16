@@ -15,12 +15,12 @@ items:
   - name: About
     url: /#about
 
-  - name: Practice
-    url: /#practice
+      # - name: Practice
+      #   url: /#practice
 
-  - name: Calendar
-    url: /#calendar
+      # - name: Calendar
+      #   url: /#calendar
 
-  - name: Contact
-    url: /#contact
+      # - name: Contact
+      #   url: /#contact
 

@@ -1,0 +1,8 @@
+
+[ ] Update bootstrap to get rid of Deprecation warning about passing a number
+without a unit.
+
+[ ] Add version numbers to the directory names in `assets/libs`.
+
+[ ] Add `_todos` to jekyll's ignore list... and myabe even git's.
+
