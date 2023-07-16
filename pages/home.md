@@ -14,7 +14,7 @@ This is a greatly simplified version of this page. Look in drafts folder.  Map, 
 
 My name is Cameron Crowe, I live in New York City, and I'm looking for others who share my dual interest in hiking and Zen.
 
-Zen and hiking are many things to many people, but I think what we seek in them is largely the same: escape, structure, safety, meaning, connection, etc.---all just very ordinary, human things. It's not my belief that ordinary humans need extraordinary practices. Rather, I think those of us drawn to practice on trail or on a cushion would be wise to spend our time simply addressing what brings us here.
+Zen and hiking are many things to many people, but I think what we seek in them is largely the same: escape, structure, safety, meaning, connection, beauty, joy, etc.---all just very ordinary, human things. It's not my belief that ordinary humans need extraordinary practices. Rather, I think those of us drawn to practice on trail or on a cushion would be wise to spend our time simply addressing what brings us here.
 
 My favorite Zen teachers are Barry Magid (with whom I took the precepts) and Karen Terzano (a fellow hiker), and I feel like Zen practice is largely about showing up and being honest. Whatever practice is, I hope we can find a way to do it together... on a trail through the forest :) 
 
@@ -23,5 +23,4 @@ If something of this resonates with you or you want to find a way to practice to
 Happy trails!
 
 ![Cam with Rakusu]({{ '/assets/img/cam-rakusu-small.jpg' | relative_url }}){: .rounded .m-auto height="300"}
-
 

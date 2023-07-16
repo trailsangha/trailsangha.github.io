@@ -12,7 +12,7 @@ brand:
   url: /
 
 items:
-  - name: About
+  - name: Back to Top
     url: /#about
 
       # - name: Practice
