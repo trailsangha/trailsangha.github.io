@@ -1,8 +1,7 @@
 ---
 layout: default
+title: Trail Sangha
 ---
-
-# Home
 
 Trail Sangha is a Zen group for thruhikers.
 
