@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: page
+title: Press
+permalink: /press/
 ---
 
-# TrailSangha Press
+# Trail Sangha Press
 
-Kwan Um School of Zen chant book -- coming soon
+Kwan Um School of Zen chant book -- coming soon!
 
