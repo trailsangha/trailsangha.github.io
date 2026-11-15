@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TrailSangha
+# Home
 
 TrailSangha is a Zen group for thruhikers.
 

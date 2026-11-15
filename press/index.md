@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Press
+title: Trail Sangha Press
 permalink: /press/
 ---
-
-# Trail Sangha Press
 
 Kwan Um School of Zen chant book -- coming soon!
 
